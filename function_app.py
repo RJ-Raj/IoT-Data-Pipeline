@@ -12,7 +12,7 @@ def test_function(myblob: func.InputStream):
                  f"Name: {myblob.name}\n"
                  f"Blob Size: {myblob.length} bytes")
     
-    connString = "DefaultEndpointsProtocol=https;AccountName=stvehicles0001;AccountKey=4660ml3GpprDJ9t4ZB0Uao5AEDCDEWSCxq5oEzQV+K2mOdmyp3aYkCmu2+/zEGQVJDkQBWJJOUK1+AStZ5xnZA==;EndpointSuffix=core.windows.net"
+    connString = "<your_connection_string>"
     blobserviceclient = bsc.from_connection_string(connString)
     filepatharray = myblob.name.split("/")
     sourcefilename = "/".join(filepatharray[1:])
